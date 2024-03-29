@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFLCTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="lib/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcol"></div>
+
+    <!--Page Title-->
+    <div class="title-position flex-up flex-right">
+        <div class="title-container" id="title-leerdoelen">
+            <div class="corners-xs"></div>
+            <div class="title-container-sub">
+                <div class="bg-blur"></div>
+                <div class="corners-xs"></div>
+                <h1>reflecties_ verder</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigatie-->
+    <nav class="nav-activator">
+        <button id="nav-button" class="sink-left sink-up">
+            <div class="bg-blur"></div>
+            <div class="menu-symbol fold-target">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h2 class="fold-target folded-nav">Home</h2>
+        </button>
+
+        <ul>
+            <li class="fold-target folded-nav">
+                <a href="overmij.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>ovr_mj</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werkprocessen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>wrkprcssn</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="vormgeving.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrmgvng</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="reflecties.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>rflcts_vrdr</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werk.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrcht_wrk</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="leerdoelen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>lrdln</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bedrijf.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>stgbdrf</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bronnen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>brnnn</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav-fade" class="fold-target folded-nav">
+        <h2>x</h2>
+    </div>
+
+
+    <!--Page Contents-->
+    <div id="fullpage" class="flex-center">
+        <div class="container" id="page-reflecties">
+            <select name="reflections" id="select-reflect">
+                <option value="-1" selected disabled>Choose one</option>
+                <option value="0">[VRSLG_1]__[21/03/2022]</option>
+                <option value="1">[VRSLG_1]__[22/04/2022]</option>
+                <option value="2">[VRSLG_2]__[09/06/2022]</option>
+                <option value="3">[VRSLG_2]__[13/06/2022]</option>
+                <option value="4">[VRSLG_2]__[13/06/2022]</option>
+                <option value="5">[VRSLG_3]__[07/10/2022]</option>
+                <option value="6">[VRSLG_3]__[12/10/2022]</option>
+                <option value="7">[VRSLG_4]__[02/12/2022]</option>
+                <option value="8">[VRSLG_4]__[09/01/2023]</option>
+                <option value="9">[VRSLG_4]__[09/01/2023]</option>
+            </select>
+
+            <div id="reflections">
+                <div class="arrowleft"></div>
+                <section id="scroll-area">
+                    <!--Reflections below here-->
+                    <!--Reflectie 1-->
+                    <article>
+                        <h3>21-03-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <!--Reflectie 1-->
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>De afgelopen 7 weken waren de eerste weken van de eerste stage. Ik heb mij in
+                                            deze tijd voornamelijk met 3 verschillende dingen bezig gehouden: een grote
+                                            klantopdracht voor Stichting Brilliant Future Kids (SBFK), bijles
+                                            webtechnieken
+                                            voor eerstejaarsstudenten en het ontwikkelen van dit stageverslag. Ik wil
+                                            bij
+                                            deze graag terugblikken op de voortgang voor de opdracht van SBFK. Hierbij
+                                            waren
+                                            de medewerkers en jongeren van SBFK betrokken, evenals het team van grafisch
+                                            vormgevers dat ik heb gevormd rond die opdracht.
+                                        </p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>In deze opdracht heb ik twee functies: webdesigner en projectleider. Ik regel
+                                            het
+                                            contact tussen de verschillende partijen, spreek SBFK en de grafisch
+                                            vormgevers
+                                            beiden minstens een keer per week. Ik zorg dat gemaakt werk van feedback
+                                            wordt
+                                            voorzien en dat er constant enige mate van voortgang is. Daarnaast moet ik
+                                            mij
+                                            nog bezig houden met het herontwerpen van de website.<br><br>
+                                            Hiermee wou ik voornamelijk voortgang creëren in een opdracht die al een
+                                            paar
+                                            maanden stilstaat, ondanks dat ik heel erg achter dit bedrijf sta. Verder
+                                            wou ik
+                                            mijn leidinggevend skills verder ontwikkelen, aangezien ik dit tof vind,
+                                            maar
+                                            nog niet heel ervaren in ben. Ik had verwacht aan het eind van deze periode
+                                            het
+                                            een en ander definitief te hebben staan voor SBFK, zowel op gebied van web
+                                            als
+                                            grafisch.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Het project heeft voornamelijk gelopen via Notion en Microsoft Teams. Ik heb
+                                            van
+                                            tevoren een uitgebreide lijst gemaakt van <a
+                                                href="https://drive.google.com/file/d/1OmroBLmjbg_weUIU_-zRvHTtcjZ7MVcz/view?usp=sharing">alle
+                                                onderdelen van deze opdracht</a>, en deze daarna gepresenteerd aan de
+                                            studenten van grafisch vormgeven, samen met context rond wat het bedrijf is
+                                            en
+                                            waar zij voor staan. Daarna zijn een aantal mensen op mij afgestapt die
+                                            daaraan
+                                            wouden werken, en heb ik daaruit een team gevormd. Met dit team ben ik aan
+                                            de
+                                            slag geweest aan de opdracht, waarna ik elke week het gemaakte werk
+                                            presenteerde
+                                            aan SBFK, indien het voldoende was om te presenteren, en heb ik de daar
+                                            vanuit
+                                            volgende <a
+                                                href="https://hetbureauweb.notion.site/Notities-Main-759ab94dfe1940d28e0bff131782723e">feedback
+                                                teruggegeven</a> aan het team. Dit leek mij de beste manier om dit te
+                                            handelen, om te zorgen dat al het werk zo vloeiend mogelijk door kon lopen.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>Helaas heeft de gekozen werkmethode niet voldoende resultaat geleverd. Er
+                                            staat
+                                            nog niks concreets voor de opdracht SBFK vast. Dit kan komen door
+                                            verschillende
+                                            factoren, maar hoogstwaarschijnlijk komt het door mijn gebrek aan ervaring
+                                            in
+                                            een leiderschapsrol, waardoor ik de grote van de opdracht niet fatsoenlijk
+                                            kan
+                                            inschatten. Ook kan mijn aanpak een reden zijn geweest: aangezien ik in deze
+                                            opdracht momenteel de belangrijkste persoon ben, moet het team altijd op mij
+                                            kunnen regelen. Een mogelijke oplossing zou zijn om een GV teamleider te
+                                            kiezen,
+                                            zodat de afdeling grafisch vormgeving ook zonder mijn betrokkenheid door kan
+                                            werken.
+                                        </p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Ik heb geleerd dat een project in je eentje proberen te leiden, wanneer je
+                                            zelf
+                                            niet veel ervaring hebt met de taken die je team uitvoeren, niet een
+                                            geweldig
+                                            idee is. Ook is het moeilijk om te multitasken: contact behouden met het
+                                            bedrijf
+                                            en het team, alle notities bijhouden, bijwerken en ordenen, het team sturen
+                                            en
+                                            zelf ook nog webdesign werk doen tegelijk is moeilijk om allemaal bij te
+                                            houden.
+                                            Ik ben dus ook niet extreem tevreden met mijn persoonlijke resultaten de
+                                            afgelopen periode. Ik ben echter ook niet per sé ontevreden, ik voel me meer
+                                            neutraal rond deze periode. Ik ben niet super positief over de fysieke
+                                            resultaten, maar ik weet nu wel meer over het uitvoeren van een
+                                            administratieve
+                                            en leidinggevende rol. En dat is dan ook wel de essentie van wat ik heb
+                                            geleerd.
+                                            Minder werk op mijn bordje nemen. En taken toevertrouwen aan groepsleden. Ik
+                                            zal
+                                            dit in de toekomst zeker bij het indelen van zoveel mogelijk werk in
+                                            gedachte
+                                            houden.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Reflectie 2-->
+                    <article>
+                        <h3>22-04-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>De afgelopen periode is voor een groot deel een vervolg geweest op de vorige.
+                                            Ik
+                                            werk nog altijd aan de opdracht voor Stichting Brilliant Future Kids, ik
+                                            help
+                                            bij webtechnieken in de les, ik werk aan het ontwerpen van een applicatie
+                                            voor
+                                            home menu navigatie, en er is in de laatste twee weken nog een grote
+                                            opdracht
+                                            bijgekomen, waar ik zo op terugkom. In deze reflectie kijk ik graag even
+                                            terug
+                                            naar de afgelopen periode in zijn geheel, de voortgang in mijn opdracht en
+                                            mijn
+                                            mentale gezondheid en de impact daarvan op mijn werkzaamheden.
+                                        </p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Ik zal hier in het kort mijn taken bij alle opdrachten beschrijven. De hulp
+                                            bij
+                                            webtechnieken en app design spreken voor zich. Ik help studenten die
+                                            achterlopen
+                                            in het vak met opdrachten en lesmateriaal inhalen, en ik… onderzoek en bouw
+                                            een
+                                            ontwerp voor een applicatie, niet veel ingewikkelder dan dat.<br><br>
+                                            Mijn taak bij de opdracht voor SBFK is enigszins veranderd. Ik moest helaas
+                                            mijn
+                                            leidinggevende rol opgeven wegens mijn mentale gezondheid. Ik was niet in
+                                            staat
+                                            om de grafisch vormgevers elke week consequent te begeleiden, dus zij hebben
+                                            nu
+                                            zelf de leiding over hun onderdeel van het project. Mijn functie in de SBFK
+                                            opdracht is nu puur geconcentreerd op het maken van de website.<br><br>
+                                            Verder heb ik nu een opdracht op me genomen voor het maken van grafische
+                                            middelen voor een dansvoorstelling in juni. Dit bevat het maken van heel
+                                            veel
+                                            achtergronden en animaties voor verschillende nummers, intermissions tussen
+                                            de
+                                            nummers in en mogelijk het een en ander aan social media advertising.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Beide opdrachten lopen voornamelijk via Notion en/of Teams. Voor de opdracht
+                                            van
+                                            SBFK heb ik in de eerste instantie nog een tijdje geprobeerd het team te
+                                            begeleiden. Hierdoor ging in mijn mening alles heel traag, er was maar heel
+                                            weinig voortgang, en dit was omdat ik heel terughoudend en afwezig was. Op
+                                            een
+                                            gegeven moment ben ik op het team afgestapt en heb ik hen de leiding over
+                                            hun
+                                            eigen deel van de opdracht geven. Dit uiteraard ook in overleg met en met
+                                            akkoord van de klant. Hierna moest ik alleen nog doorwerken aan mijn eigen
+                                            deel
+                                            van de opdracht, de website, wat toen ook sneller ging lopen.<br>
+                                            Ook de dansshow opdracht loopt vlot. Ik heb deze opdracht iets meer dan een
+                                            week
+                                            voor het schrijven van deze reflectie opgenomen, en de deadline hiervoor is
+                                            in
+                                            mid-Juni. Ik heb hiervoor in de eerste instantie een notion bord opgesteld,
+                                            waar
+                                            ik alle losse design opdrachten in heb geplaatst. Deze heb ik ook gedeeld
+                                            met de
+                                            klant. Hierna ben ik eigenlijk per direct aan de slag gegaan met het
+                                            onderzoeken
+                                            van de verschillende muzieknummers, inspiratie en concepten opschrijven en
+                                            daarna direct de verschillende concepten gaan schetsen. Volgende week is het
+                                            volgende overleg met de klant, hier zal ik al mijn concepten laten zien en
+                                            hoop
+                                            ik akkoord te krijgen op het een en ander, zodat ik aan de slag kan gaan met
+                                            de
+                                            definitieve versies van de ontwerpen.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>De gekozen oplossing voor het langzaam lopende SBFK project - het doorgeven
+                                            van
+                                            de een leidende rol voor het grafische werk - levert positieve resultaten.
+                                            Er is
+                                            meer vaart gekomen in het grafische werk voor SBFK, wat zich tot dusver
+                                            heeft
+                                            geuit in de oplevering van verschillende logo’s en het vormen van een nieuwe
+                                            huisstijl. Aan de andere kant heeft het mij ook meer tijd gegeven om me te
+                                            concentreren op mijn eigen werk. Ik heb kunnen beginnen aan een functioneel
+                                            prototype voor de website, wat ook leven begint te krijgen. In de nabije
+                                            toekomst kan de huisstijl hier waarschijnlijk ook op toegepast worden.
+                                            Verder
+                                            heb ik de tijd kunnen vinden voor een nieuwe opdracht, en dat loopt als een
+                                            paard: er staan al flink veel schetsen - ongeveer 10 gedetailleerde concept
+                                            schetsen, van de in totaal 15 nummers. Al met al hebben de gemaakte keuzes
+                                            de
+                                            afgelopen paar periodes gezorgd voor een versnelling in het te verrichten
+                                            werk.
+                                        </p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>De afgelopen periode is vrij moeizaam verlopen. Mijn mentale gezondheid is
+                                            flink
+                                            achteruit gegaan, waardoor al mijn capabiliteiten ook zwakker zijn geworden.
+                                            Ik
+                                            werk minder hard dan ik weet dat ik zou kunnen, ik heb moeite met
+                                            concentreren
+                                            en ik stort regelmatig emotioneel in elkaar. Ondanks dat heb ik het werk wel
+                                            vol
+                                            kunnen houden, en ik vind dat ik daar toch enigszins trots op mag zijn.
+                                            Uiteindelijk gaat het werk deze periode nog altijd beter dan vorige maand,
+                                            dus
+                                            een nieuwe taakverdeling maken in het team was absoluut de juiste keuze. Ik
+                                            hoop
+                                            deze mentaliteit de aankomende periode mee te kunnen nemen en verder uit te
+                                            kunnen breiden, en zo mijn workflow nog beter te kunnen verbeteren.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Reflectie 3-->
+                    <article>
+                        <h3>09-06-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>Ik heb de afgelopen 4 weken kunnen werken aan het grafische werk van een
+                                            dansvoorstelling. Dit was een opdracht waar ik in m’n eentje aan heb
+                                            gewerkt,
+                                            met een hobbyisten dansgroep als klant.</p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Als onderdeel van deze opdracht heb ik een grote lijst aan grafische
+                                            ontwerpen
+                                            moeten maken als achtergronden voor de dansvoorstelling. Dit zijn 14
+                                            achtergronden, 1 unieke voor elk nummer. Al deze achtergrond moesten ook
+                                            geanimeerd worden.
+                                            Naast de achtergronden voor de verschillende nummers moesten er ook een
+                                            aantal
+                                            assets komen voor de livestream, zoals een wachtscherm, een animatie voor
+                                            scène-overgangen en titelkaart voor de start van elk nummer.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Eerst heb ik de opdracht geanalyseerd en hier een notion bord voor gemaakt.
+                                            Elk
+                                            nummer heeft hierop een aparte kaart gekregen. Zodra dit bord klaar stond
+                                            ben ik
+                                            alle nummers gaan luisteren en de songteksten van elk gaan lezen, en heb ik
+                                            van
+                                            elk mijn gedachten opgeschreven in de bijbehorende Notion kaart.
+                                            Zodra ik mijn notities af had ben ik eerst gaan tekenen, in Procreate op een
+                                            iPad. Deze tekeningen zijn nu terug te vinden in de Notion kaarten bij het
+                                            schets gedeelte. Hierbij is het belangrijk te vermelden dat sommige nummers
+                                            pas
+                                            later bekend werden, en dus geen tekening hebben: de ideeën hiervan zijn,
+                                            toen
+                                            de nummers bekend worden, persoonlijk besproken. Zoals ook te zien is zijn
+                                            nummers als Psychic Fire en Yoiyami Kocho heel erg veranderd, vergeleken met
+                                            hun
+                                            originele tekening.
+                                            Na een overleg waar de meeste van deze achtergronden goedgekeurd zijn, soms
+                                            met
+                                            het een en ander aan feedback hieraan verbonden, ben ik aan de slag gegaan.
+                                            Ik
+                                            heb hierbij besloten Illustrator te gebruiken, met een kleine uitzondering
+                                            voor
+                                            Ghost Rule, waarbij ik Photoshop heb gebruikt voor wat blending opties. De
+                                            keuze
+                                            voor Illustrator was vooral zodat ik alle verschillende elementen makkelijk
+                                            los
+                                            zou kunnen exporteren, waardoor ik ze makkelijk los kon gebruiken in het
+                                            animatieproces. Verder maakt Illustrator vector graphics, iets wat inherent
+                                            functioneel is in CSS, en dus een goede skill voor mij zou zijn om te
+                                            hebben.
+                                            Ook heb ik geprobeerd zoveel mogelijk variatie te maken in stijl: van pure
+                                            flat
+                                            art, naar iets meer cartoon-y, naar wat realistischer. Bovendien heb ik ook
+                                            actief de keuze gemaakt om één achtergrond volledig te focussen op
+                                            typografie,
+                                            om hier meer ervaring in op te kunnen doen.
+                                            Verder was het proces vrij eenvoudig. Ik ben aan de slag gegaan in
+                                            Illustrator,
+                                            heb regelmatig updates gestuurd naar de klant, de feedback daarvan verwerkt.
+                                            Ongebruikte of tussentijdse elementen heb ik opgeslagen in een Archive bord
+                                            op
+                                            Notion.
+                                            Als laatst was het animatiewerk nog over. Origineel was ik van plan om in
+                                            Adobe
+                                            Animate te gaan werken, omdat het goede integratie heeft met Illustrator,
+                                            maar
+                                            wegens tijdgebrek heb ik uiteindelijk gekozen om Premiere te gebruiken,
+                                            omdat ik
+                                            die software beter ken. Hierbij heb ik geleerd hoe ik presets moet maken en
+                                            hoe
+                                            je kan animeren in Premiere, met keyframes en eases.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>De gekozen oplossing voor het langzaam lopende SBFK project - het doorgeven
+                                            van
+                                            de een leidende rol voor het grafische werk - levert positieve resultaten.
+                                            Er is
+                                            meer vaart gekomen in het grafische werk voor SBFK, wat zich tot dusver
+                                            heeft
+                                            geuit in de oplevering van verschillende logo’s en het vormen van een nieuwe
+                                            huisstijl. Aan de andere kant heeft het mij ook meer tijd gegeven om me te
+                                            concentreren op mijn eigen werk. Ik heb kunnen beginnen aan een functioneel
+                                            prototype voor de website, wat ook leven begint te krijgen. In de nabije
+                                            toekomst kan de huisstijl hier waarschijnlijk ook op toegepast worden.
+                                            Verder
+                                            heb ik de tijd kunnen vinden voor een nieuwe opdracht, en dat loopt als een
+                                            paard: er staan al flink veel schetsen - ongeveer 10 gedetailleerde concept
+                                            schetsen, van de in totaal 15 nummers. Al met al hebben de gemaakte keuzes
+                                            de
+                                            afgelopen paar periodes gezorgd voor een versnelling in het te verrichten
+                                            werk.
+                                        </p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Ik heb veel geleerd door deze opdracht - met name gericht op fysieke skills.
+                                            Mijn
+                                            Illustrator en Premiere kennis zijn sterk verbeterd. Ook heb ik gemerkt dat
+                                            ik
+                                            deze opdracht bijzonder gemakkelijk vol kon houden, ondanks mijn zeer
+                                            slechte
+                                            aandachtsboog. Ik weet niet precies waardoor dat komt, aangezien het de
+                                            eerste
+                                            keer is dat dit daadwerkelijk het geval is, maar ik kan een aantal
+                                            inschattingen
+                                            maken.
+                                            Het zou om te beginnen te maken kunnen hebben met dat de opdracht bestond
+                                            uit
+                                            een heleboel kleine, losse taken. Hierdoor was er veel variatie, waardoor
+                                            het
+                                            interessant blijft voor mij.
+                                            Een alternatief zou kunnen zijn dat ik de opdracht goed had voorbereid.
+                                            Alles
+                                            liep vloeiend, en ik was niet afhankelijk van anderen. Wanneer ik aan een
+                                            opdracht aan het werken ben, en ik midden in deze opdracht opeens iets
+                                            anders
+                                            moet doen, of moet wachten op andermans werk, zodat ik door kan gaan met
+                                            mijn
+                                            eigen werk, raak ik heel snel geïrriteerd, en daardoor raak ik al mijn
+                                            interesse
+                                            in het project kwijt. Ik moet in een keer door kunnen werken aan een
+                                            opdracht.
+                                            Het kan natuurlijk ook iets anders nog zijn, of een combinatie van meerdere
+                                            factoren, maar dit zijn de dingen die in mij opkomen. Dit is een hele stap
+                                            in
+                                            het vinden van mijn plek in een werkgroep, en ik hoop dat ik deze ervaring
+                                            voort
+                                            kan zetten in toekomstige projecten.
+
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Terugblik Verricht Werk Stage 1-->
+                    <article>
+                        <h3>13-06-2022 [Terugblik]</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">1</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">2</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">3</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">4</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">5</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Terugblik verricht werk: SBFK</h3>
+                                        <p>Een grote reden waarom ik bij het Bureau stage ben gaan lopen was vanwege
+                                            mijn
+                                            eerste opdracht, die voor Stichting Brilliant Future Kids. Deze opdracht
+                                            omvatte
+                                            een heleboel losse taken, waaronder een nieuwe website maken, een nieuwe
+                                            huisstijl ontwikkelen, printwerk maken, et cetera. Dit kon ik natuurlijk
+                                            niet
+                                            alleen, dus daar heb ik toen, na de opdracht meer hapklaar te hebben
+                                            gemaakt,
+                                            een team bij gevonden die mij hierbij kon helpen. Hoe dat allemaal is gegaan
+                                            is
+                                            terug te vinden in mijn eerste twee reflecties.
+                                            Ik wil het hier alleen nog even hebben over de laatste periode. De opdracht
+                                            voor
+                                            SBFK is voor mij in de laatste maand op een zeer laag pitje komen staan. Ik
+                                            werk
+                                            zelf alleen nog aan de website, maar ik ben heel erg afhankelijk van het
+                                            werk
+                                            van het team grafisch vormgeving. De huisstijl moest uiteraard eerst af zijn
+                                            voordat ik met designwerk aan de slag kon gaan, en daar zijn pas deze week
+                                            echt
+                                            definitieve beslissingen in genomen. Ik zou in de weken na het inleveren van
+                                            dit
+                                            verslag daar waarschijnlijk mee aan de slag kunnen gaan.
+                                            Verder heb ik wel heel veel geleerd van dit project. Ik begon uiteraard met
+                                            een
+                                            meer leidinggevende rol, en na te hebben ontdekt dat zo’n rol mij niet goed
+                                            ligt, heb ik deze rol weggegeven aan iemand anders. Ook heb ik ontdekt dat
+                                            ik
+                                            zeer getalenteerd ben in voorafgaand een opdracht de delen van de opdracht
+                                            af te
+                                            splitsen, te organiseren en de relevante informatie voor die verschillende
+                                            delen
+                                            te onderzoeken, te verzamelen en te noteren, zoals te vinden op het notion
+                                            bord.
+                                            Dit zijn skills die in elk project erg nuttig zijn.
+                                        </p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Terugblik verricht werk: Bijles Webtechnieken</h3>
+                                        <p>Tot op een paar weken geleden heb ik geholpen bij de lessen webtechnieken van
+                                            docent Hans Brussee. Dit was voor mij om te groeien op het gebied van
+                                            presenteren.
+                                            Ik heb verschillende dingen hierbij gedaan, die ik kan onderverdelen in twee
+                                            categorieën: persoonlijke ondersteuning en meelopen in de les. Ik zou zeggen
+                                            dat
+                                            de eerste hiervan voor de ontwikkeling van mijn presentatie skills het beste
+                                            was: hier zat soms wat voorbereiding aan verbonden, en vooral veel ter
+                                            plekke
+                                            bedenken hoe ik bepaalde dingen het meest effectief kon uitleggen. Het
+                                            meelopen
+                                            in de les was onverwachts een interessante manier om mijn kennis over de
+                                            webtechnieken zelf te verbeteren. Regelmatig stelt iemand een vraag over hoe
+                                            je
+                                            iets moet doen waar je zelf nog nooit over hebt nagedacht, omdat je een
+                                            bepaalde
+                                            ontwerpstijl hebt die inherent een bepaalde manier van programmeren aan zich
+                                            verbonden heeft, andere mensen hebben andere ontwerpstijlen, en daar komen
+                                            dus
+                                            weer andere oplossingen bij kijken binnen het programmeren.
+                                            Ondanks al deze positiviteit heb ik denk ik het minst geleerd van deze
+                                            activiteit, en ik vraag me soms af of ik de tijd die ik erin heb gestoken
+                                            niet
+                                            beter in iets anders had kunnen stoppen. De verbetering in presenteren die
+                                            ik
+                                            heb gekregen hiervan is absoluut zeer bruikbaar, maar ik vraag me af dat,
+                                            als ik
+                                            hier geen tijd aan had besteed, ik dan meer andere projecten had kunnen
+                                            doen, en
+                                            via die andere projecten ook gewoon ervaring had kunnen opdoen met
+                                            presenteren.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Terugblik verricht werk: Mobile Application Design</h3>
+                                        <p>Een niet geheel gepland onderdeel van mijn stage was het maken van een
+                                            ontwerp
+                                            voor een mobiele applicatie in Adobe XD. Hoewel ik hier niet per se voor had
+                                            gepland met mijn leerdoelen, het past wel in het straatje van leerdoel 2,
+                                            het
+                                            ontwikkelen van mijn creatieve skills. Adobe XD liep mij in het algeheel
+                                            redelijk stroef af, en ik heb het onderzoeksproject voorafgaand een
+                                            applicatie
+                                            ontwerpen ook nog nooit afgelopen, dus dit was in het algeheel hele goede
+                                            ervaring om op te doen. Dit project bestond dus uit een flinke hoeveelheid
+                                            verschillende taken, dit waren als volgt, op volgorde: brainstormen, een
+                                            marktonderzoek, prototyping, user testing onderzoek, een aanbeveling
+                                            schrijven
+                                            en als laatst dan een laatste prototype maken. Dit was een goed proces om
+                                            eens
+                                            doorheen te gaan, want het is duidelijk iets wat ik heel goed ga kunnen
+                                            gebruiken in de toekomst.
+
+                                            Zie brondocumenten en voorbeelden.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Terugblik verricht werk: Programmeren CMS Portfolio</h3>
+                                        <p>Voor mijn portfolio heb ik een heel simplistisch CMS geprogrammeerd.
+                                            Momenteel is
+                                            deze alleen nog voor voor het uploaden en onderhoud van foto’s, maar het kan
+                                            in
+                                            de toekomst uiteraard ook gebruikt worden voor bijvoorbeeld artikelen,
+                                            video’s
+                                            of losse pagina’s. Het doel hiervan was uiteraard om mijn programmeerskills
+                                            te
+                                            verbeteren. Ik heb dit uiteindelijk gemaakt met JavaScript en PHP, en het
+                                            werkt
+                                            bijzonder robuust. Ik heb om te beginnen een eenvoudige front-end gemaakt
+                                            met
+                                            HTML, waarin alles geschreven kon worden wat ik nodig zou hebben. Origineel
+                                            was
+                                            ik van plan om zoveel mogelijk met JavaScript te doen, maar uiteindelijk ben
+                                            ik
+                                            voornamelijk naar PHP overgestapt. Vanaf hier was het uitvogelen hoe SQL in
+                                            PHP
+                                            werkt, hoe ik het beste queries kan schrijven en hoe ik ze naar de databank
+                                            kan
+                                            sturen. Zodra ik snapte hoe dit allemaal werkte kon ik redelijk gemakkelijk
+                                            verschillende functies aan het CMS toevoegen. Ik moest alleen nog ontdekken
+                                            hoe
+                                            ajax in JavaScript werkte, maar toen ik dat werkend had kon ik mijn “Manage”
+                                            pagina ook gemakkelijk opstellen.</p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Terugblik verricht werk: Dansshow Connect</h3>
+                                        <p>De laatste, en grootste, opdracht die ik heb uitgevoerd was het maken van de
+                                            grafische onderdelen voor een dansshow. Ik heb hier in mijn laatste
+                                            reflectie al
+                                            uitgebreid over gesproken, dus ik houd het hier kort. Simpel gezegd: deze
+                                            opdracht viel in de trant van het leren van meer grafische skills, en ik heb
+                                            voor mijn gevoel mij hier volledig in kunnen ontwikkelen op gebied van
+                                            Illustrator en Premiere. Deze opdracht was met gemak de meest nuttige die ik
+                                            heb
+                                            gemaakt tijdens mijn stage, en ik ga de skills die ik hier heb opgedaan,
+                                            evenals
+                                            de nieuwe kennis die ik heb over hoe ik goed kan functioneren in een
+                                            opdracht,
+                                            heel goed gebruiken in al mijn toekomstige opdrachten.</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Voorruitblik na Stage 1-->
+                    <article>
+                        <h3>13-06-2022 [Vooruitblik]</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                </div>
+                                <section class="text">
+                                    <div class="situatie taak actie resultaat reflectie current">
+                                        <h3>Vooruitblik Stage 2</h3>
+                                        <p>De eerste stage is nu bijna achter de rug, en daarbij hoort wat mij betreft
+                                            een
+                                            blik op de toekomst. Ik heb deze stage veel geleerd over design, over wat
+                                            mijn
+                                            rol wel en niet kan zijn binnen een team, en over programmeren - zie
+                                            daarvoor de
+                                            algemene reflectie over de stage van vandaag. Tijdens de volgende stage wil
+                                            ik
+                                            mij graag richten op compleet andere dingen, heel erg gericht op de
+                                            toekomst. Ik
+                                            ben zelf niet super geïnteresseerd in daadwerkelijk webdesigner worden, ik
+                                            wil
+                                            graag docent worden, dus tijdens mijn volgende stage zal ik waarschijnlijk
+                                            focussen op dingen die daarvoor relevant zijn, maar wel met blik op de
+                                            werkprocessen van mediavormgevers. Die stage zal waarschijnlijk ook bij het
+                                            Bureau zijn, en ik zal daar waarschijnlijk minder vormgeving/klantgericht
+                                            werk
+                                            doen, en meer helpen met begeleiding van medewerkers en/of administratie, en
+                                            ook
+                                            zoekende naar wat ik na deze studie precies zal gaan doen.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Reflectie Stageperiode 3-->
+                    <article>
+                        <h3>07-10-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>Deze periode heb ik een aantal dingen gedaan. Het stond in het algeheel
+                                            voornamelijk in het thema van opstarten van mijn werkzaamheden, doen waar ik
+                                            al
+                                            bekend mee ben en hiermee bekijken wat ik in de laatste periode van stage
+                                            nog
+                                            kan en wil bereiken. Taken die ik heb verricht deze periode zijn werk aan
+                                            SBFK,
+                                            meelopen als onderwijsassistent bij twee verschillende lessen en een zeer
+                                            uitgebreid programmeerproject - hierover meer in de volgende reflectie. </p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Ik had deze periode een aantal taken. Wat SBFK betreft ben ik
+                                            verantwoordelijk
+                                            voor de website. Dit betreft het uitwerken van de website zelf, maar ook het
+                                            ontwerpen van de stijl hiervoor en het prototype. Verder help ik mee bij
+                                            lessen
+                                            voor webtechnieken en vormgeving, waarbij ik vragen van studenten
+                                            beantwoord,
+                                            soms het een en ander uitleg en in de toekomst nog het een en ander aan
+                                            lessen
+                                            over zal nemen en/of extra bijlessen zal geven, maar dat komt in de volgende
+                                            fase pas. Als laatste heb ik een programmeerproject dat draait om het leren
+                                            van
+                                            PHP, SQL en NodeJS, maar hier praat ik in de volgende reflectie dus pas wat
+                                            meer
+                                            over, omdat het daarin relevanter is.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Het jaar begon heel goed: ik kon prima aan het werk. Stage begon met helpen
+                                            bij
+                                            de introductieweken van de eerstejaars. Hierbij ik heb studenten geholpen
+                                            met
+                                            hun laptop klaarmaken voor gebruik voor de komende vier jaar, adviezen
+                                            gegeven
+                                            over de vormgeving van de opdrachten die ze tijdens de introductie moesten
+                                            maken
+                                            en… simpelweg orde houden. Het was een interessante ervaring, het laat sterk
+                                            het
+                                            verschil zien vergeleken met het vorige schooljaar waar ik in een klas ging
+                                            meelopen vanaf halverwege het schooljaar.<br><br> Zodra dit klaar was heb ik
+                                            een
+                                            regeling afgesproken om één dag te helpen bij webtechnieken en één dag te
+                                            helpen
+                                            bij vormgeving, waarbij ik help met vragen antwoorden en zo nu en dan wat
+                                            toevoeg aan de uitleg van de les. Ook ben ik na de introductie verder gaan
+                                            werken aan SBFK, schijnbaar de opdracht van de eeuw, letterlijk. Hiervoor
+                                            heb ik
+                                            stylecards gemaakt: kleine vormgevingskaartjes waarmee de klant op visuele
+                                            manier het gevoel van het eindproduct kan besluiten. Deze zijn opgestuurd,
+                                            gepresenteerd en uitgebreid besproken. Hieruit is een lijst notities gekomen
+                                            waarmee ik verder kan werken.<br> Echter had mijn grafische kaart het kort
+                                            hiervoor
+                                            begeven, wat het wat lastiger maakte om verder te werken aan
+                                            vormgevings-gerelateerde opdrachten.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>De stylecards zijn hier te vinden. Nu ik een grote lijst aan steekwoorden heb
+                                            voor de website, kan ik hier daadwerkelijk een concept voor gaan
+                                            ontwikkelen.
+                                            Verder hoor ik alleen positieve dingen over mijn bijdrage bij de
+                                            eerstejaarsklassen. De docenten zijn heel tevreden, en ook de studenten
+                                            lijken
+                                            heel tevreden te zijn. Wanneer ik in de toekomst zelf een les geef zal ik
+                                            deze
+                                            afsluiten met een feedbackformuliertje om hier ook wat beter op te kunnen
+                                            reflecteren.</p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Ik voel me matig over mijn werkzaamheden deze periode. Ik heb mij voorgenomen
+                                            mij
+                                            deze periode te gaan richten op mijn toekomst: leren van nieuwe skills die
+                                            ik na
+                                            mijn studie wil hebben, onderzoeken van ondernemingsmogelijkheden en
+                                            oriënteren
+                                            op de banenmarkt. Hoewel het werk dat ik deze periode heb verricht
+                                            kwalitatief
+                                            voldoende is, denk ik niet dat het aansluit op wat ik momenteel zoek en wil
+                                            leren.<br><br>Ik vind het echter moeilijk om er vanaf te stappen, of er een
+                                            oplossing
+                                            voor te vinden. Er is één onderdeel waar ik zeer tevreden mee ben, en dat is
+                                            mijn bijdrage bij de lessen. Dit is alleen niet om kwaliteit- of
+                                            productgerelateerde redenen, het is volledig vanwege mijn een blik op de
+                                            toekomst. We gaan de wintermaanden tegemoet, en de vaste planning die ik heb
+                                            vanwege de lessen dwingt mij om bezig te blijven, iets waar ik mij heel erg
+                                            aan
+                                            vast probeer te houden zodat ik niet weer door depressie nauwelijks iets
+                                            gedaan
+                                            krijg. Daarom dat ik in ieder geval dat zal vasthouden in de volgende
+                                            periode,
+                                            maar ik moet wel weer even uitgebreid mijn planning bekijken zodat ik deze
+                                            stage
+                                            daadwerkelijk aan mijn leerdoelen toekom.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Reflectie Laptop Kapot-->
+                    <article>
+                        <h3>12-10-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>In de zomervakantie heb ik gewerkt aan een zeer uitgebreide animatie voor een
+                                            danscompetitie, voor dezelfde groep als ik waar ik eerder over heb
+                                            geschreven.
+                                            Tijdens dit proces was mijn laptop heel traag: zowel mijn Illustrator als
+                                            Premiere bestanden stonden keivol met verschillende lagen, objecten en
+                                            effecten
+                                            waardoor mijn laptop echt aan het worstelen was. Ik denk dat dit
+                                            uiteindelijk
+                                            niet goed is geweest voor mijn grafische kaart, en dat het daardoor is
+                                            oververhit en is doorgebrand, want het hield kort erna op met werken. Dit
+                                            maakte
+                                            doorwerken vanzelfsprekend lastig.</p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Reflecteren via dit format op deze situatie voelt lastig, maar mijn taak als
+                                            gevolg van deze onverwachte situatie is in essentie te beschrijven als: “een
+                                            manier vinden om door te kunnen werken zonder toegang tot de standaard
+                                            resources
+                                            waar ik gewend aan ben geraakt over de jaren heen.” Dit kan ik denk ik ook
+                                            wel
+                                            vertalen als “omgaan met onverwachte tegenslagen.”
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Mijn eerste actie was simpel: laptop troubleshooten. Ik zal het gehele proces
+                                            achterwege laten, maar het kwam neer op twee aantal weken van alles proberen
+                                            om
+                                            alle mogelijke fouten na te gaan, en bij alles enige periode testen of het
+                                            het
+                                            probleem heeft verholpen. Tijdens deze tests moest ik ook nog uitvogelen hoe
+                                            ik
+                                            al mijn bestanden effectief kon backupen, aangezien mijn laptop na opstarten
+                                            na
+                                            zo’n 5 minuten een bluescreen gaf.<br><br> Uit alle tests is gebleken dat
+                                            mijn GPU het
+                                            hardwarematig heeft begeven, wat betekent dat ik de rest van dit jaar zonder
+                                            GPU
+                                            zit. Dit betekent: zoeken naar taken die ik alsnog kan uitvoeren. Ik heb
+                                            verschillende software getest om te kijken hoe goed het draait. Al snel was
+                                            duidelijk dat webdevelopment in VS Code nog makkelijk werkt, dus ik heb
+                                            binnen
+                                            deze periode ook hoge prioriteit gegeven aan een development project waar ik
+                                            zelf mee bezig ben met als doel het leren van PHP, SQL en NodeJS.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>De oplossing om mijn laptop werkend te krijgen is uiteindelijk geworden om
+                                            Windows volledig opnieuw te installeren, en voordat het de mogelijkheid had
+                                            om
+                                            te bluescreenen, de GPU drivers uit te zetten. Hierdoor is er geen
+                                            communicatie
+                                            binnen de computer met de GPU, en kan het systeem dus ook daardoor niet
+                                            crashen.
+                                            Het opnieuw installeren van Windows vereiste uiteraard wel dat ik al mijn
+                                            bestanden kon archiveren, en gelukkig kwam ik er na openen van mijn laptop
+                                            achter dat mijn D-schijf extern is aangesloten op mijn moederbord. Dit is de
+                                            schijf waar al mijn bestanden op staan, en gelukkig kon ik dus letterlijk
+                                            gewoon
+                                            die schijf uit mijn laptop halen om al mijn bestanden veilig te stellen.
+                                            <br><br>Uit het testen van software is gebleken dat Illustrator en Photoshop
+                                            allebei nog kunnen draaien op geïntegreerde graphics, alleen wat langzamer,
+                                            wat
+                                            prettig is omdat ik dan gewoon nog mijn vormgeefwerk kan verrichten. Helaas
+                                            draaien XD, Premiere, Animate en alle software die ik als onderdeel van mijn
+                                            kennisverbreding-leerdoel wil leren niet goed zonder GPU. Hier moest ik dus
+                                            een
+                                            andere oplossing voor vinden: het leerdoel veranderen, iets wat ik eigenlijk
+                                            niet wil, of een andere oplossing. Na overleg met Guido hebben we besloten
+                                            om
+                                            hier een aantal weken binnen de stage voor in te plannen, zodat ik tijdens
+                                            die
+                                            weken 40 uur per software op een leenlaptop uitgebreid kan leren en
+                                            experimenteren. <br><br>Ook mijn programmeerproject is veel opgeschoten deze
+                                            periode, en ik heb nu een uitgebreid database managementsysteem kunnen
+                                            schrijven
+                                            wat bijna helemaal af is en daarmee klaar voor gebruik.</p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Ik ben van mening dat ik deze periode goed heb aangepakt. Het mag een lastige
+                                            situatie zijn geweest, maar uiteindelijk heb ik goeie oplossingen kunnen
+                                            vinden
+                                            voor elk probleem en kan ik prima verder werken gedurende deze stage. Ergens
+                                            tijdens de komende 4 maanden zal ik een desktop bouwen, en hierop zal ik na
+                                            stage al mijn werk uitvoeren. Als de desktop tijdens stage al af is zal ik
+                                            deze
+                                            enige periode op stage neerzetten, zodat ik de laatste paar maanden daarop
+                                            zonder enige problemen mijn werk af kan maken. <br><br>Als laatste sluit ik
+                                            graag hiermee af: door deze situatie heb ik onverwachts een nieuwe skill
+                                            opgepakt, iets wat ik waarschijnlijk het best kan beschrijven als
+                                            crisismanagement? Ik heb nog nooit zo’n vervelende tegenslag meegemaakt, en
+                                            het
+                                            een keer ervaren, ondanks dat het vervelend is, heeft ervoor gezorgd dat ik
+                                            hier
+                                            in de toekomst ook beter voorbereid voor ben, en weet wat voor stappen ik af
+                                            kan
+                                            lopen om mijn werk toch voort te kunnen zetten in veel kortere tijd dan ik
+                                            er nu
+                                            aan heb moeten spenderen.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Reflectie November-->
+                    <article>
+                        <h3>02-12-2022</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>We beginnen langzaam te gaan richting het eind van de stage. Ik moet dus
+                                            prioriteiten gaan stellen. Een van mijn leerdoelen is om me bezig te houden
+                                            met de toekomst. Echter heb ik hier nog niet aan kunnen werken, en met oog
+                                            daarop heb ik besloten om achter bepaalde van mijn taken een punt te zetten
+                                            om daar ruimte voor te maken.</p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Mijn taken voor deze afgelopen maand zijn als volgt: In overleg gaan over de
+                                            staat van de opdracht van SBFK, en het leren van een nieuw programma in de
+                                            vorm van een projectweek. Dit allemaal met het doel om bepaalde van mijn
+                                            zaken af te kunnen vinken, en hiermee ruimte te maken om mij bezig te kunnen
+                                            houden met onderzoeken, plannen en voorbereiden voor mijn toekomstige
+                                            ondernemende bezigheden.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Aan het begin van de maand heb ik via de mail contact gezocht met Tamara van
+                                            SBFK. Hier heb ik mee overlegd wat we met de opdracht zouden doen. Deze liep
+                                            namelijk nogal vast. Er is eerder een persoonlijk overleg geweest over de
+                                            voorheen gemaakte style cards, en hierbij zijn geen enkele knopen
+                                            doorgehakt. Reden hiervoor is dat het nog niet duidelijk is wat er überhaupt
+                                            allemaal op de website moet komen. Teksten zijn er nog niet, foto’s nog
+                                            niet, er is nog geen duidelijkheid wat video’s betreft, niks. Ik heb
+                                            voorgesteld om na november de opdracht gewoon neer te leggen tot er meer
+                                            duidelijkheid over is - zoals het nu gaat is namelijk voor beide partijen
+                                            alleen maar frustrerend. Ik heb door de maand heen nog wel gekeken of ik nog
+                                            iets kon betekenen voor SBFK, maar helaas is daar ook niks verder
+                                            uitgekomen.
+                                            <br><br>
+                                            Verder heb ik deze maand (wat bedoeld was als) een week gespendeerd om
+                                            nieuwe software te leren. Hierbij heb ik wat verschillende software
+                                            onderzocht, en uiteindelijk ongeveer 9 dagen gespendeerd voor zowel het
+                                            onderzoeken en leren van Adobe After Effects en verschillende software in
+                                            het algeheel.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>Uiteindelijk heb ik voor SBFK niks meer kunnen maken. Hiermee is akkoord
+                                            gegaan in de mail - beide partijen zijn het erover eens dat de voorbereiding
+                                            van alle media-uitingen in de vorm van teksten en ander vooraf aangeleverd
+                                            werk niet voldoende is, en dat er daarom geen fatsoenlijk product gemaakt
+                                            kan worden.<br>
+                                            Verder heb ik dus een aantal dagen gespendeerd aan het leren van nieuwe
+                                            software. Hierbij heb ik wat verschillende programma’s onderzocht, en
+                                            uiteindelijk mijn energie gespendeerd aan het leren van After Effects. Als
+                                            resultaat heb ik nu een redelijk idee van de mogelijkheden van het
+                                            programma, genoeg kennis om simpele motion graphics te maken, en <a href="werk.html">een
+                                            voorbeeld</a> om te laten zien.
+                                        </p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Ik heb een gemengt gevoel over deze maand. Ik vind het jammer dat SBFK zo
+                                            hard door de mand is gevallen, en het voelt ook alsof ik heel veel tijd heb
+                                            verspilt aan deze opdracht. Echter probeer ik hier positief in te blijven,
+                                            en de ervaringen die ik heb opgedaan via deze opdracht mee te nemen naar de
+                                            toekomst. Meemaken dat een opdracht niet loopt zoals verwacht is namelijk
+                                            ook een heel waardevolle les! Verder kan ik deze ervaring ook gebruiken om
+                                            te proberen dit soort dingen eerder aan te voelen in de toekomst, zodat ik
+                                            minder tijd kwijt ben aan toekomstige opdrachten. <br>
+                                            Ook ben ik heel blij met de resultaten van de het After Effects project. Het
+                                            mag dan wel maar een simpele stinger animatie zijn, maar het behandeld heel
+                                            veel dingen, zoals beweging, easing, curves, paths, shapes, morphs en masks.
+                                            Dit zijn vrijwel alle basis dingen die ik nodig heb om elke motion graphic
+                                            te maken die ik zou willen maken. Hier ga ik in de toekomst zo ontzettend
+                                            veel aan hebben, als ik freelance graphic design werk ga doen.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Reflectie December-->
+                    <article>
+                        <h3>09-01-2023</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                    <button class="situatie current"
+                                        onclick="reflectieSegment(1, 'situatie')">S</button>
+                                    <button class="taak" onclick="reflectieSegment(1, 'taak')">T</button>
+                                    <button class="actie" onclick="reflectieSegment(1, 'actie')">A</button>
+                                    <button class="resultaat" onclick="reflectieSegment(1, 'resultaat')">R</button>
+                                    <button class="reflectie" onclick="reflectieSegment(1, 'reflectie')">R</button>
+                                </div>
+                                <section class="text">
+                                    <div class="situatie current">
+                                        <h3>Situatie</h3>
+                                        <p>Aan het begin van december waren al mijn voorgaande opdrachten afgerond. Niks
+                                            stond nog open. Hierdoor is een perfecte tijd gekomen om mij bezig te houden
+                                            met het opzetten van mijn toekomst.</p>
+                                    </div>
+                                    <div class="taak">
+                                        <h3>Taak</h3>
+                                        <p>Ik ga mij bezig houden met het opzetten van een eigen merk. Dit merk zal
+                                            onderdeel zijn van de VTuber- en online art community. In de komende maanden
+                                            zal ik een combinatie gaan uitvoeren van livestreamen (kapitaliseren op het
+                                            proces van grafische media-uitingen maken), posters en buttons ontwerpen en
+                                            deze verkopen op conventies en commissies doen voor grafisch werk via social
+                                            media. Hier moet flink veel voor voorbereid worden. Ik moest een
+                                            brand-personage ontwerpen, een huisstijl ontwikkelen en algemene assets
+                                            designen.
+                                        </p>
+                                    </div>
+                                    <div class="actie">
+                                        <h3>Actie</h3>
+                                        <p>Ik heb mij deze maand dus bezig gehouden met het vormgeven van een eigen
+                                            brand. Dit is flink moeilijk geweest: ik heb geprobeerd een gefocust
+                                            huisstijl-boek te ontwerpen, maar dit ging veel te moeizaam. Ik heb veel
+                                            teveel ideeën in mijn hoofd die ik wil representeren in mijn huisstijl -
+                                            zoveel dat het niet te doen is om dit van tevoren vast te zetten. Ik ben dus
+                                            gewoon aan de slag gegaan met het maken van assets, en deze de huisstijl
+                                            natuurlijk te laten bepalen. Verder heb ik keihard zitten schetsen om een
+                                            concept voor een personage te bedenken, en deze uitgewerkt.
+                                        </p>
+                                    </div>
+                                    <div class="resultaat">
+                                        <h3>Resultaat</h3>
+                                        <p>Als resultaat van het verrichte werk heb ik nu een solide personage en
+                                            huisstijl om in te werken. Mijn volgende stap is om commissions te openen op
+                                            sociale media, iets wat in de vooruitblik te lezen valt. De huisstijl en het
+                                            personage vallen allemaal hier te zien. Verder heb ik ook wat nieuwe
+                                            software geprobeerd, in de vorm van Affinity Designer 2, een alternatief
+                                            voor Adobe Illustrator. Via dit programma heb ik een simpele poster
+                                            ontworpen van het personage voor adverteren, en ik moet zeggen dat ik dit
+                                            programma persoonlijk veel fijner vind dan Adobe Illustrator, wat betekent
+                                            dat ik hier waarschijnlijk naar over zal stappen. Dit omdat de verschillende
+                                            functies naar mijn mening gewoon logischer functioneren. Er zijn minder
+                                            knoppen, maar het heeft lang niet zoveel knoppen nodig. Verder is de iPad
+                                            versie van de app een heel stuk beter dan de iPad versie van Illustrator:
+                                            het is completer, het kan vrijwel alles wat de desktop versie van Affinity
+                                            Designer 2 kan. Dit in tegenstelling tot de iPad versie van Adobe
+                                            Illustrator, die vele malen minder kan dan de desktop versie. Dit maakt het
+                                            heel gemakkelijk om zo nu en dan een snel ontwerp in bed af te maken, als
+                                            het bijvoorbeeld koud is.</p>
+                                    </div>
+                                    <div class="reflectie">
+                                        <h3>Reflectie</h3>
+                                        <p>Deze maand ging top. Het voelt raar om aan een persoonlijk iets als dit te
+                                            werken op stage, maar het heeft me een heel sterke basis gegeven om op door
+                                            te bouwen. Zelfs als het hele VTuber concept in de toekomst door de mand
+                                            valt, heb ik nog altijd een huisstijl en merk om mee verder te werken.
+                                            Verder was Affinity Designer 2 een hele vondst. Het is een onwijs sterk
+                                            programma, met alle opties die je ooit nodig kunt hebben. Ik vind het alleen
+                                            maar heerlijk werken, en het feit dat het zo’n robuuste iPad versie heeft
+                                            heeft mijn productiviteit ook verbeterd: ik maak vaker dingen ‘s avonds in
+                                            mijn bed nog even. In het geheel zou ik dit dus een zeer geslaagde maand
+                                            noemen.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Voorruitblik eind stage-->
+                    <article>
+                        <h3>09-01-2023 [Vooruitblik]</h3>
+                        <div class="inner-article">
+                            <div class="corners-s"></div>
+                            <div class="content">
+                                <div class="bg-blur"></div>
+                                <div class="corners-s"></div>
+                                <div class="menu">
+                                </div>
+                                <section class="text">
+                                    <div class="situatie taak actie resultaat reflectie current">
+                                        <h3>Vooruitblik Stage 2</h3>
+                                        <p>De tweede stage is nu ook weer bijna achter de rug. Ik heb nog aardig wat
+                                            geleerd, flink wat ontdekt en redelijk veel gegroeid. Maar wat ga ik nu doen
+                                            met deze kennis?<br><br>
+
+                                            De komende periode ga ik mij bezig houden met de dingen die ik in de laatste
+                                            reflectie noemde: livestreamen, designs maken, op conventies artist alley
+                                            draaien om designs te verkopen en commissions draaien op social media. Ik
+                                            zal om te beginnen een maand lang gratis commissions draaien, om nog iets te
+                                            oefenen, om mijn naam naar buiten te krijgen en om mijn portfolio verder uit
+                                            te werken.<br>
+                                            Daarna (of ondertussen) zal ik beginnen met streamen, en verschillende
+                                            posters, buttons en misschien nog wel andere producten ontwerpen, en in het
+                                            algeheel een stand gaan voorbereiden om conventies te kunnen draaien. <br>
+
+                                            En dat zullen mijn komende maanden zijn, tot zeker de proeve van
+                                            bekwaamheid. Ik kijk hier erg naar vooruit. Het is mijn beste kans om iets
+                                            groots voor mezelf op te kunnen zetten, en ik heb het vertrouwen, de kennis
+                                            en de skills nu om het waar te maken. En vrijwel alles hiervan heb ik aan
+                                            het afgelopen half jaar te danken.<br><br>
+
+                                            En dat was het. Bedankt voor het doorlezen van dit verslag. Ik hoop dat het
+                                            een prettige en enerverende ervaring was.
+
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Reflections end here-->
+                </section>
+                <div class="arrowright"></div>
+            </div>
+
+        </div>
+        <div id="topgradient"></div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

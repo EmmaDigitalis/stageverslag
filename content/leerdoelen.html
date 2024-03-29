@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRDLN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="lib/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcol bg2"></div>
+
+    <!--Page Title-->
+    <div class="title-position flex-up flex-right">
+        <div class="title-container" id="title-leerdoelen">
+            <div class="corners-xs"></div>
+            <div class="title-container-sub">
+                <div class="bg-blur"></div>
+                <div class="corners-xs"></div>
+                <h1>leerdoelen</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigatie-->
+    <nav class="nav-activator">
+        <button id="nav-button" class="sink-left sink-up">
+            <div class="bg-blur"></div>
+            <div class="menu-symbol fold-target">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h2 class="fold-target folded-nav">Home</h2>
+        </button>
+
+        <ul>
+            <li class="fold-target folded-nav">
+                <a href="overmij.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>ovr_mj</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werkprocessen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>wrkprcssn</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="vormgeving.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrmgvng</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="reflecties.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>rflcts_vrdr</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werk.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrcht_wrk</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="leerdoelen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>lrdln</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bedrijf.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>stgbdrf</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bronnen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>brnnn</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav-fade" class="fold-target folded-nav">
+        <h2>x</h2>
+    </div>
+
+
+    <!--Page Contents-->
+    <div id="fullpage" class="flex-center">
+        <div class="container" id="page-leerdoelen">
+
+            <section class="current" onclick="setLeerdoel(1)">
+                <div class="bg-blur"></div>
+                <div class="corners-m"></div>
+                <h3>Eerste Stage</h3>
+                <div class="content">
+                    <h2>Stage 1</h2>
+                    <p>Deze stage is vooral gericht op ontwikkeling binnen het vakgebied.
+                    </p>
+                    <h3>Leerdoel 1 <a href="reflecties.html">[Product]</a></h3>
+                    <p>Ik wil tijdens deze stage ontdekken wat voor werkmethodes voor mij werken. Ik heb grote
+                        concentratieproblemen en vind het lastig om langere tijd aan dezelfde opdracht te zitten, en als
+                        ik dat moet raak ik daar heel snel verveeld van, onafhankelijk van hoe leuk ik het werk vind.
+                        Deze periode zal ik dus spenderen om een methode te vinden hoe ik in een team kan passen en
+                        meewerken. Hiertoe zal ik tenminste 3 verschillende werkmethodes proberen en analyseren wat wel
+                        en niet werkt.</p>
+                    <h3>Leerdoel 2 <a href="werk.html#selector-id-verichtwerk">[Product]</a></h3>
+                    <p>Tijdens deze periode wil ik mijn creatieve skills tot een hoger niveau tillen, zodat ik zelf elke
+                        mogelijk opdracht aan kan nemen en tot een succesvol einde kan brengen. Het gaat hierbij zowel
+                        om programmeren als om ontwerp werk. Voor programmeren wil ik elk mogelijke front-end JavaScript
+                        en laag-niveau PHP project kunnen schrijven. Voor ontwerpwerk wil ik tenminste 3 nieuwe
+                        Illustrator-skills op kunnen pakken en 3 verschillende stijlen uitproberen. Hiervoor zal ik
+                        tenminste 1 grootschalig programmeerproject doen, en 3 verschillende ontwerpopdrachten met
+                        verschillende stijlen.</p>
+                    <h3>Leerdoel 3 <a href="dl/Webtechnieken Nabespreking.pdf">[Product]</a></h3>
+                    <p>Als laatst wil ik mijn presenteer-skills zodanig uitbreiden dat ik anderen alles wat zij zouden
+                        moeten weten kan uitleggen op een manier dat zij snappen. Hiervoor zal ik gaan helpen bij
+                        programmeerlessen in de vorm van bijles, evenals ondersteuning. <div class="hidden">Dit zal aan
+                            het eind van de periode besproken worden
+                            met de docent die daarbij betrokken is.</div>
+                    </p>
+                    <p>Al deze leerdoelen gelden tijdens de periode van de eerste stage, met ingang van februari 2022,
+                        en elk zal bereikt zijn tegen juni 2022.</p>
+
+                </div>
+            </section>
+            <section onclick="setLeerdoel(2)">
+                <div class="bg-blur"></div>
+                <div class="corners-m"></div>
+                <h3>Tweede Stage</h3>
+                <div class="content">
+                    <h2>Stage 2</h2>
+                    <p>Deze stage is vooral gericht op oriëntatie op de toekomst.
+                    </p>
+
+                    <h3>Leerdoel 4<a href="reflecties.html">[Product]</a></h3>
+                    <p>
+                        <b>Oriënteren onderneemmogelijkheden (en werkmogelijkheden)</b><br>
+                        Na deze studie moet ik gaan werken. Ik overweeg om te gaan ondernemen, en wil hier graag deze
+                        stage een begin aan maken. Dit zal zijn in de vorm van onderzoeken wat de mogelijkheden zijn,
+                        maar ook misschien wel door een begin hieraan te maken. Verder wil ik een aantal netjes
+                        uitgooien naar mogelijk werk. Mijn doel is om na deze stage me helemaal gereed te voelen voor de
+                        toekomst.
+                    </p>
+                    <h3>Leerdoel 5<a href="https://docs.google.com/document/d/1D8bJaLHt7bGh3cGFWzlSQBKh0LGTdgBxII6ENlwCiAs/edit?usp=sharing">[Product]</a></h3>
+                    <p>
+                        <b>Software kennis uitbreiding</b><br>
+                        Het ondernemen wat ik wil gaan doen in de toekomst zal gepaart zijn met freelance werk en
+                        misschien wel een standaard baan. Om op zoveel mogelijk plekken aangenomen te kunnen worden,
+                        zodat ik veel variatie kan hebben en niet snel verveeld zal raken, vind ik het belangrijk om
+                        zoveel mogelijk skills te hebben. Deze stageperiode zijn er nog een aantal dingen die ik wil
+                        leren. Het gaat hierbij om Godot (game development), Blender (3D modeling), After Effects
+                        (animatie & videobewerking), PHP, SQL en NodeJS (online databases en communicatie).
+                    </p>
+                    <h3>Leerdoel 6<a href="werk.html">[Product]</a></h3>
+                    <p>
+                        <b>Groeien in systematisch plannen en eigen producten ontwikkelen</b><br>
+                        Als laatste wil ik een systeem ontwikkelen waarin ik mijzelf aan deadlines kan houden. Het gaat
+                        hierbij niet om deadlines die anderen voor mij zetten, maar om deadlines die ik voor mijzelf
+                        zet. Ik wil in de toekomst mogelijk eigen producten gaan ontwikkelen en verkopen (denk aan
+                        posters, calenders en feestkaarten) om een extra zakcentje te kunnen verdienen, en hiervoor is
+                        het uitermate belangrijk om mezelf aan zelfgezette deadlines te kunnen houden en een planning
+                        bij te kunnen houden met wat alle relevante verkooplocaties/mogelijkheden zijn.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+        <div id="topgradient"></div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

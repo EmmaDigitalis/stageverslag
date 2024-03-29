@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9E9E9E;}
+	.st1{opacity:0.2;fill:#FFFFFF;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'VT323-Regular';}
+	.st4{font-size:24px;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st6{font-size:48px;}
+</style>
+<rect x="309" y="21" class="st0" width="1471" height="1050"/>
+<g>
+	<polygon class="st1" points="1143.1,389 1090.9,389 1054,425.9 1054,478.1 1090.9,515 1143.1,515 1180,478.1 1180,425.9 	"/>
+	<text transform="matrix(1 0 0 1 1092.7012 467.1577)" class="st2 st3 st4">ovr_m</text>
+</g>
+<g>
+	<polygon class="st1" points="1292.1,389 1239.9,389 1203,425.9 1203,478.1 1239.9,515 1292.1,515 1329,478.1 1329,425.9 	"/>
+	<text transform="matrix(1 0 0 1 1217.7012 467.1577)" class="st2 st3 st4">rflcts_vrdr</text>
+</g>
+<g>
+	<polygon class="st1" points="1292.1,533 1239.9,533 1203,569.9 1203,622.1 1239.9,659 1292.1,659 1329,622.1 1329,569.9 	"/>
+	<text transform="matrix(1 0 0 1 1236.9014 603.1577)" class="st2 st3 st4">bdrf_1</text>
+</g>
+<g>
+	<polygon class="st1" points="1196.1,645 1143.9,645 1107,681.9 1107,734.1 1143.9,771 1196.1,771 1233,734.1 1233,681.9 	"/>
+	<text transform="matrix(1 0 0 1 1145.7012 714.1577)" class="st2 st3 st4">lrdln</text>
+</g>
+<g>
+	<polygon class="st1" points="1091.1,540 1038.9,540 1002,576.9 1002,629.1 1038.9,666 1091.1,666 1128,629.1 1128,576.9 	"/>
+	<polygon class="st5" points="1091.1,540 1038.9,540 1002,576.9 1002,629.1 1038.9,666 1091.1,666 1128,629.1 1128,576.9 	"/>
+	<text transform="matrix(1 0 0 1 1022.5015 608.1577)" class="st2 st3 st4">wrkprcssn</text>
+</g>
+<g>
+	<polygon class="st1" points="995,830.1 995,777.9 1031.9,741 1084.1,741 1121,777.9 1121,830.1 1084.1,867 1031.9,867 	"/>
+	<text transform="matrix(1 0 0 1 1028.9014 810.1577)" class="st2 st3 st4">bdrf_2</text>
+</g>
+<g>
+	<polygon class="st1" points="851,830.1 851,777.9 887.9,741 940.1,741 977,777.9 977,830.1 940.1,867 887.9,867 	"/>
+	<text transform="matrix(1 0 0 1 904.7012 810.1577)" class="st2 st3 st4">brnnn</text>
+</g>
+<g>
+	<polygon class="st1" points="939.1,592 886.9,592 850,628.9 850,681.1 886.9,718 939.1,718 976,681.1 976,628.9 	"/>
+	<text transform="matrix(1 0 0 1 895.1011 659.1577)" class="st2 st3 st4">vrmgvng</text>
+</g>
+<g>
+	<polygon class="st1" points="971.4,366 887.4,366 828,425.4 828,509.4 887.4,568.8 971.4,568.8 1030.8,509.4 1030.8,425.4 	"/>
+	<g>
+		<polygon class="st2" points="953.7,452 950.2,455.5 918.1,487.5 914.7,491 914.7,495.9 918.1,499.3 923,499.3 926.5,495.9 
+			958.6,463.8 962,460.3 962,455.5 958.6,452 		"/>
+		<polygon class="st2" points="968.3,466.7 964.9,470.1 932.8,502.2 929.3,505.7 929.3,510.5 932.8,514 937.7,514 941.1,510.5 
+			973.2,478.5 976.7,475 976.7,470.1 973.2,466.7 		"/>
+		<polygon class="st2" points="983,481.3 979.5,484.8 947.4,516.9 944,520.3 944,525.2 947.4,528.7 952.3,528.7 955.8,525.2 
+			987.9,493.1 991.3,489.7 991.3,484.8 987.9,481.3 		"/>
+	</g>
+	<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 931.8145 526.816)" class="st2 st3 st6">exit</text>
+	<polygon class="st5" points="970.9,366.5 886.9,366.5 827.5,425.9 827.5,509.9 886.9,569.3 970.9,569.3 1030.3,509.9 1030.3,425.9 
+			"/>
+</g>
+</svg>

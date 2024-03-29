@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcol"></div>
+
+    <!--Page Overlay-->
+    <div id="overlay-vormgeving" class="overlay-hidden">
+        <button class="close" id="close-vormgeving-overlay">X</button>
+
+        <section id="overlay-sbfk" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>SBFK</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/sbfk-proto-2.png" alt="blank">
+                        <figcaption>
+                            <a href="https://xd.adobe.com/view/b737b69c-9e45-44eb-923f-04f1d80f0f91-e264/">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk WIP Prototype</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/sbfk-proto.png" alt="blank">
+                        <figcaption>
+                            <a href="https://xd.adobe.com/view/b737b69c-9e45-44eb-923f-04f1d80f0f91-e264/">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk WIP Prototype</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/sbfk-chat.png" alt="blank">
+                        <figcaption>
+                            <a href="img/sbfk-chat.pn">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Screenshot van de groepchat</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/subtaken-sbfk.png" alt="blank">
+                        <figcaption>
+                            <a href="img/subtaken-sbfk.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Screenshot van alle taken</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-webtech" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Assistentie Webtechnieken</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/feedback-webtech.png" alt="blank">
+                        <figcaption>
+                            <a href="dl/Webtechnieken Nabespreking.pdf">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk beoordeling</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-appdesign" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Mobile Application Design</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/app-proto-top.png" alt="blank">
+                        <figcaption>
+                            <a href="dl/app-procesverslag.pdf">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Lees het onderzoeksverslag</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/app-proto.png" alt="blank">
+                        <figcaption>
+                            <a href="https://xd.adobe.com/view/9932e034-6bfb-4dd3-988d-21fcfc041c43-cc61/">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Probeer het prototype</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/app-feedbackrapport-2.png" alt="blank">
+                        <figcaption>
+                            <a href="dl/app-emmadejong-aanbeveling.pdf">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Lees het feedbackrapport</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-cms" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Programmeren CMS Portfolio</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/fileupload-page.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/fileupload">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Download de bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/fileupload-code.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/fileupload">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Download de bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-connect" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Dansshow Connect</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/connect-concept-startdash.png" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/connect-concept-KING.png" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/connect-concept-yume-e-no-ippo.png" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/connect-psychic-fire.gif" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/connect-start-dash.gif" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/coonect-KING.gif" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/coonect-tokimeki-runners.gif" alt="blank">
+                        <figcaption>
+                            <a href="https://connect-cherish.notion.site/07a7a60db59d4adba9e0c4ffe6a85d4b?v=41298706a2774a90a1cc4d9985a33b77">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Ga naar bron</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-sbfk2" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Dansshow Connect</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/werk/sbfk-2/original@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/papercraft@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/whiteboard@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/business@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/metallic@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/space@2x.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/presentation/d/1vLplYBFNSzOV_tvS2JnKm_HrY1690tUCetC9SIfRCPs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Presentatie stylecards</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/sbfk-2/steekwoorden.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/document/d/10BTEpPGoc4gBpj3LauXhbAbpebjl-d3BuCY86zN_Quk/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Zie steekwoorden document</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-database" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Dansshow Connect</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/werk/database/code.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/bingo-rando">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk GitHub Repository</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/database/db.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/bingo-rando">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk GitHub Repository</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/database/add.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/bingo-rando">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk GitHub Repository</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/database/listedit.png" alt="blank">
+                        <figcaption>
+                            <a href="https://github.com/EmmaDigitalis/bingo-rando">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Bekijk GitHub Repository</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="overlay-logodesign" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Logo Ontwerp</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/werk/logo-design/sketch.jpg" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/logo-design/sketch.jpg">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Voorstel logo</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/logo-design/final.jpg" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/logo-design/final.jpg">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Eindlogo</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-projectweek" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Leerweek After Effects</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/werk/projectweek-software/star-circle-to-star-final.gif" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/projectweek-software/star-circle-to-star-final.gif">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Full-size animatie</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/projectweek-software/verslag.png" alt="blank">
+                        <figcaption>
+                            <a href="https://docs.google.com/document/d/1D8bJaLHt7bGh3cGFWzlSQBKh0LGTdgBxII6ENlwCiAs/edit?usp=sharing">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Verslag projectweek lezen</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="overlay-eigenbrand" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="overlay-gallery">
+                <h3>Eigen Branding</h3>
+                <div class="gallery-container">
+                    <figure>
+                        <img src="img/werk/eigen-branding/design-sketch-1.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/design-sketch-1.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Design Schets 1</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/design-sketch-2.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/design-sketch-2.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Design Schets 2</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/design-sketch-3.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/design-sketch-3.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Design Schets 3</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/design-sketch-4.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/design-sketch-4.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Design Schets 4</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/ref-temp.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/ref-temp.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Final Design & Reference Sheet</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/plush-sketch.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/plush-sketch.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Plushy schets</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/pngtuber.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/pngtuber.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>PNGTuber Plushy</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/logo-schetsen.jpg" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logo-schetsen.jpg">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Logo schetsen</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/logos-digital.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logos-digital.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Digitale Logo tryouts</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/logo.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logo.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Logo Final</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/poster-sketch.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logos-digital.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Poster Schets</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/poster-final.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logos-digital.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Poster Final</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/screen-starting.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/logos-digital.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Start scherm</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/brb.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/brb.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>"Zo terug" scherm</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/werk/eigen-branding/layout.png" alt="blank">
+                        <figcaption>
+                            <a href="img/werk/eigen-branding/layout.png">
+                                <button>
+                                    <div class="corners-s"></div>
+                                    <div class="bg-blur"></div>
+                                    <h3>Standaard layout & achtergrond</h3>
+                                </button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--Navigatie-->
+    <nav class="nav-activator">
+        <button id="nav-button" class="sink-left sink-up">
+            <div class="bg-blur"></div>
+            <div class="menu-symbol fold-target">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h2 class="fold-target folded-nav">Home</h2>
+        </button>
+
+        <ul>
+            <li class="fold-target folded-nav">
+                <a href="overmij.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>ovr_mj</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werkprocessen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>wrkprcssn</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="vormgeving.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrmgvng</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="reflecties.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>rflcts_vrdr</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werk.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrcht_wrk</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="leerdoelen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>lrdln</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bedrijf.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>stgbdrf</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bronnen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>brnnn</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav-fade" class="fold-target folded-nav">
+        <h2>x</h2>
+    </div>
+
+
+    <!--Page Contents-->
+    <div id="fullpage" class="flex-center">
+        <div class="container" id="page-werk">
+            <section>
+                <header>
+                    <div class="bg-blur"></div>
+                    <div class="corners-m"></div>
+                    <h2>vericht-werk</h2>
+                </header>
+                <article id="stage1items" class="unselected">
+                    <div class="container">
+                        <div class="bg-blur"></div>
+                        <div class="corners-s"></div>
+                        <h3>Stage 1</h3>
+                        <section class="force-wrap">
+                            <button onclick="activateOverlay('overlay-sbfk')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>SBFK</h3>
+                            </button>
+                            <button onclick="activateOverlay('overlay-webtech')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Assistentie Webtechnieken</h3>
+                            </button>
+                            <button onclick="activateOverlay('overlay-appdesign')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Mobile Application Design</h3>
+                            </button>
+                            <button onclick="activateOverlay('overlay-cms')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Programmeren CMS Portfolio</h3>
+                            </button>
+                            <button onclick="activateOverlay('overlay-connect')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Dansshow Connect</h3>
+                            </button>
+                        </section>
+                    </div>
+                </article>
+                <article id="stage2items" class="unselected">
+                    <div class="container">
+                        <div class="bg-blur"></div>
+                        <div class="corners-s"></div>
+                        <h3>Stage 2</h3>
+                        <section class="force-wrap">
+                            <button class="works3" onclick="activateOverlay('overlay-sbfk2')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>SBFK</h3>
+                            </button>
+                            <button class="works3" onclick="activateOverlay('overlay-database')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Database Manager</h3>
+                            </button>
+                            <button class="works4" onclick="activateOverlay('overlay-logodesign')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Logo Ontwerp</h3>
+                            </button>
+                            <button class="works4" onclick="activateOverlay('overlay-projectweek')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Leerweek After Effects</h3>
+                            </button>
+                            <button class="works4" onclick="activateOverlay('overlay-eigenbrand')">
+                                <div class="corners-s"></div>
+                                <div class="bg-blur"></div>
+                                <h3>Eigen Branding</h3>
+                            </button>
+                        </section>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div id="topgradient"></div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        $('#scroll-area>article').each(function () {
+        if (($(this).position().left + ($(this).width() / 2)) < screenCenter) {
+            $(this).css("opacity", 1 - (screenCenter - ($(this).position().left + ($(this).width() / 2))) / $(this).width());
+        } else {
+            $(this).css("opacity", 1 - (($(this).position().left + ($(this).width() / 2)) - screenCenter) / $(this).width());
+        }
+    });
+    </script>
+</body>
+
+</html>

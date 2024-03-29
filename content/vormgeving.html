@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRMGVNG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="lib/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcol"></div>
+    
+    <!--Content Overlay-->
+    <div id="overlay-vormgeving" class="overlay-hidden">
+        <button class="close" id="close-vormgeving-overlay">X</button>
+
+        <section id="overlay-kleuren" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="content">
+                <figure>
+                    <img src="img/vg-col.png" alt="blank">
+                </figure>
+                <article>
+                    <h2>Kleuren</h2>
+                    <p>
+                        Het kleurenschema is sinds het eerste verslag aardig veranderd. Kleuren worden nu gebruikt om het verslag aan te geven.
+                        Er zijn twee tinten paars voor de eerste twee stageverslagen, en twee tinten blauw voor de laatste twee.
+                        Deze verandering is ingevoerd op basis van feedback gebaseerd op navigeerbaarheid: het was niet duidelijk
+                        voor een nieuwe lezer wat nieuwe informatie was, en wat al eerder bestond, en dus was er niet duidelijk
+                        wat er precies gelezen en nagekeken moest worden. Door middel van deze verandering hoop ik hier verduidelijking
+                        in te kunnen brengen. Verder was de keuze voor deze twee kleuren vrij simpel:
+                        het zijn niet heel overweldigende kleuren zoals iets als rood of oranje,
+                        ook wel: ze stralen rust uit, een kwaliteit dat ik graag uitstraal.
+                        <br><br>Alle kleuren hier omheen zijn voornamelijk wegens functionele redenen gekozen: de
+                        donkere fades zijn om de pagina’s wat dynamischer en dus wat interessanter te maken om naar te
+                        kijken, evenals om het al donkere kleurenschema van de website te versterken, waardoor de witte
+                        teksten en accenten uit het ontwerpthema sterker uitkomen en de lezers aandacht beter trekken.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="overlay-lettertypes" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="content">
+                <figure>
+                    <img src="img/vg-fonts.png" alt="blank">
+                </figure>
+                <article>
+                    <h2>Lettertypes</h2>
+                    <p>
+                        De twee lettertypes die gebruikt zijn binnen dit stageverslag zijn Roboto Mono - met name de
+                        Light (font-weight 300) variant - voor teksten, en VT323 voor headers. Dit zijn beide monospace
+                        fonts: iets wat inspeelt op het op digitale elementen geïnspireerde ontwerpthema. Monospace
+                        fonts worden vaak geassocieerd met programmeren, en VT323 zelf is een pixelart font - een
+                        kunstvorm waar ik zelf in het verleden veel mee heb gedaan (voorbeeld) - iets wat inspeelt op
+                        het concept dat de vormgeving van het verslag op mijzelf terug moet komen.
+                        <br><br>
+                        <a href="https://fonts.google.com/share?selection.family=Roboto%20Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700%7CVT323">
+                        Alle gekozen fonts komen van Google Fonts</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="overlay-ontwerpthema" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="content">
+                <figure>
+                    <img src="img/vg-theme.png" alt="blank">
+                </figure>
+                <article>
+                    <h2>Concept</h2>
+                    <p>
+                        Voor de vormgeving heb ik in de eerste instantie gekozen voor een thema dat “digital”-achtige
+                        elementen combineert met glassmorphism. Oorspronkelijk zouden de transparante witte vlakken
+                        ervoor zorgen dat de elementen die erachter zitten wazig worden, een element van glassmorphism,
+                        maar dit is uiteindelijk wegens prestatie- en compatibiliteit-gerelateerde redenen afgeschaft.
+                        Namelijk: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#browser_compatibility">Het
+                            CSS-property backdrop-filter bestaat niet in Mozilla Firefox,</a> en de website zou
+                        daardoor breken op die browser. En op browsers waar het wel ondersteund wordt heeft het
+                        bijzonder negatieve invloed op de prestaties van de website, waarbij het vaak zelfs op mijn
+                        redelijk sterke computer onder de 30 frames per seconde aanraakte.<br><br>TOEVOEGEN VERSLAG 3: Backdrop-filter is nu officiëel geïmplementeerd in alle browsers. Echter heeft het nogsteeds zodanig negatieve performance impact dat het niet waard is om nu aan te zetten.<br><br> De digitale aspecten
+                        van het
+                        ontwerpthema zijn te merken in… vrijwel alles dat wit is, om het even simpel uit te leggen. De
+                        grid achtergrond op de homepagina, de hoeken op alle vlakken, al deze elementen zijn heel strak
+                        en methodes uitgelegd, op een manier dat ze bijna lijken op schermen en/of oude dot-matrix
+                        displays. Als laatste is ook nog gekozen om voor de titels van de pagina’s de klinkers van de
+                        woorden te verwijderen, zolang alle eerste en laatste letters nog bestaan. Dit was vooral gedaan
+                        voor wat variatie, en omdat mensen over het algemeen kunnen lezen wat ergens staat, <a
+                            href="https://science.howstuffworks.com/life/inside-the-mind/human-brain/you-can-read-scrambled-words-certain-conditions.htm">zolang
+                            de
+                            structuur van een woord niet al te erg veranderd</a>.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="overlay-structuur" class="hidden">
+            <div class="corners-m"></div>
+            <div class="bg-blur"></div>
+            <div class="content">
+                <figure>
+                    <img src="img/vg-struct.png" alt="blank">
+                </figure>
+                <article>
+                    <h2>Structuur</h2>
+                    <p>
+                        Voor dit verslag heb ik gekozen om niet een standaard, start-tot-eind lineaire vormgeving te
+                        gebruiken. Hier zijn een aantal redenen voor. Ten eerste vind ik het belangrijk dat de persoon
+                        die het leest op elk moment precies kan vinden wat ze willen lezen: dit is waarom de navigatie
+                        altijd terug te vinden is in de hoek van elke pagina, en je altijd direct terug kan naar de
+                        homepagina, vanaf waar je ook elk punt van het verslag kan vinden. Verder is het verslag in de
+                        vorm van een website, en is het dus niet logisch vinden als het dus simpelweg vormgegeven is als
+                        een tekstdocument met verschillende pagina’s aan tekst met plaatjes - wat is dan namelijk het
+                        punt van een verslag als een website schrijven. <br><br>En als laatste zie ik het verslag zelf
+                        ook als
+                        een product en eigen bewijsmateriaal dat laat zien wat ik kan. Hierom vond ik het erg belangrijk
+                        dat elke pagina uniek zou zijn, maar wel leesbaar en goed overzichtelijk. Elke pagina gebruikt
+                        hetzelfde concept van één of meerdere vlakken, gecentreerd op de pagina en direct leesbaar,
+                        waarin je kan navigeren naar andere punten binnen het onderwerp waar die pagina over gaat, en
+                        gestructureerd op een manier dat logisch is voor dat specifieke onderwerp. <br><br>Elke
+                        reflectie heeft
+                        een eigen vlak, werkprocessen kan je makkelijk tussen wisselen en vergelijken met elkaar, de
+                        over mij pagina is simpel en laat alleen een enkel vlak tekst met een foto zien. Op deze manier
+                        raakt de gebruiker niet overweldigd met nieuwe methodes van elke pagina besturen, maar is de
+                        ervaring overal wel uniek en op te nemen in een manier die gefocust is en past bij de informatie
+                        dat wordt gepresenteerd.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!--Page Title-->
+    <div class="title-position flex-down flex-center-x">
+        <div class="title-container" id="title-leerdoelen">
+            <div class="corners-xs"></div>
+            <div class="title-container-sub">
+                <div class="bg-blur"></div>
+                <div class="corners-xs"></div>
+                <h1>vormgeving</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigatie-->
+    <nav class="nav-activator">
+        <button id="nav-button" class="sink-left sink-up">
+            <div class="bg-blur"></div>
+            <div class="menu-symbol fold-target">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h2 class="fold-target folded-nav">Home</h2>
+        </button>
+
+        <ul>
+            <li class="fold-target folded-nav">
+                <a href="overmij.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>ovr_mj</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werkprocessen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>wrkprcssn</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="vormgeving.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrmgvng</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="reflecties.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>rflcts_vrdr</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werk.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrcht_wrk</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="leerdoelen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>lrdln</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bedrijf.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>stgbdrf</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bronnen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>brnnn</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav-fade" class="fold-target folded-nav">
+        <h2>x</h2>
+    </div>
+
+
+    <!--Page Contents-->
+    <div id="fullpage" class="flex-center">
+        <div class="container" id="page-vormgeving">
+            <article class="vg4" onclick="activateOverlay('overlay-kleuren')">
+                <div class="corners-s"></div>
+                <div class="bg-blur"></div>
+                <div class="background-image vg-col"></div>
+                <h3>Kleuren</h3>
+            </article>
+            <article onclick="activateOverlay('overlay-lettertypes')">
+                <div class="corners-s"></div>
+                <div class="bg-blur"></div>
+                <div class="background-image vg-font"></div>
+                <h3>Lettertypes</h3>
+            </article>
+            <div class="flex-wrapper"></div>
+            <article onclick="activateOverlay('overlay-ontwerpthema')">
+                <div class="corners-s"></div>
+                <div class="bg-blur"></div>
+                <div class="background-image vg-theme"></div>
+                <h3>Concept</h3>
+            </article>
+            <article onclick="activateOverlay('overlay-structuur')">
+                <div class="corners-s"></div>
+                <div class="bg-blur"></div>
+                <div class="background-image vg-struct"></div>
+                <h3>Structuur</h3>
+            </article>
+        </div>
+        <div id="topgradient"></div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

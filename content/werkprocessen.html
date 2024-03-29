@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRKPRCSSN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcol bg1"></div>
+    
+    <!--Page Title-->
+    <div class="title-position flex-up flex-right">
+        <div class="title-container" id="title-leerdoelen">
+            <div class="corners-xs"></div>
+            <div class="title-container-sub">
+                <div class="bg-blur"></div>
+                <div class="corners-xs"></div>
+                <h1>werkprocessen</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigatie-->
+    <nav class="nav-activator">
+        <button id="nav-button" class="sink-left sink-up">
+            <div class="bg-blur"></div>
+            <div class="menu-symbol fold-target">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+            <h2 class="fold-target folded-nav">Home</h2>
+        </button>
+
+        <ul>
+            <li class="fold-target folded-nav">
+                <a href="overmij.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>ovr_mj</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werkprocessen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>wrkprcssn</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="vormgeving.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrmgvng</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="reflecties.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>rflcts_vrdr</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="werk.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>vrcht_wrk</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="leerdoelen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>lrdln</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bedrijf.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>stgbdrf</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="fold-target folded-nav">
+                <a href="bronnen.html">
+                    <div class="bg-blur"></div>
+                    <div class="link-content">
+                        <h3>brnnn</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav-fade" class="fold-target folded-nav">
+        <h2>x</h2>
+    </div>
+
+
+    <!--Page Contents-->
+    <div id="fullpage" class="flex-center noscroll">
+        <div class="container" id="page-werkprocessen">
+            <section id="wp-k1" class="depth-front" onclick="setWerkproces('depth-front', 'depth-center-r', 'depth-back-r')">
+                <div class="bg-blur"></div>
+                <div class="corners-m"></div>
+                <div class="content">
+                    <div class="page">
+                        <h3>B1-K1-W1</h3>
+                        <h4>Bespreekt de opdracht</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Basiskennis over marketing en communicatie, mondelinge en schriftelijke
+                                taalvaardigheid, analyseren van informatie over de opdracht en
+                                het kunnen inleven in de behoefte van de klant.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-4" id="B1-K1-W1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K1-W2</h3>
+                        <h4>Maakt een planning</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Plannen en organiseren, samenwerken en overleggen met alle partijen
+                                en in staat zijn om te rapporteren. Eenvoudige calculatievaardigheden
+                                en kennis over de opzet van een planning zijn nodig. Projectmatig
+                                kunnen werken.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-2" id="B1-K1-W2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K1-W4</h3>
+                        <h4>Maakt een concept</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>De creatieve vakkennis, vermogen om te innoveren, te onderzoeken en
+                                vanuit meerdere invalshoeken te kijken. Vaardigheid met de relevante
+                                software en kennis van vormgeving, kleuren en stijlen zijn noodzakelijk.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-2" id="B1-K1-W4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K1-W5</h3>
+                        <h4>Maakt een ontwerp</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Creatieve vakdeskundigheid, kwaliteit leveren. Initiatiefrijk met
+                                oplossingen, klantgerichtheid. Kennis van auteursrecht, vormgeving,
+                                kleuren en stijlen, vaardig met relevante software en het maken van
+                                een running demo en gebruikersscenario.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-2" id="B1-K1-W5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K1-W6</h3>
+                        <h4>Presenteert het concept en/of ontwerp van de media-uiting</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Presenteren, overtuigen en met druk en tegenslag om kunnen gaan.
+                                Mondelinge en schriftelijke taalvaardigheid en vaardigheid met presentatiemiddelen
+                                zijn van belang.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-5" id="B1-K1-W6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="wp-k2" class="depth-center-r" onclick="setWerkproces('depth-center-l', 'depth-front', 'depth-center-r')">
+                <div class="bg-blur"></div>
+                <div class="corners-m"></div>
+                <div class="content">
+                    <div class="page">
+                        <h3>B1-K2-W1</h3>
+                        <h4>Bereidt de realisatie voor</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Creatief-technische vakkennis, volgt instructies en procedures op,
+                                vaardigheid met relevante software, kennis van bestandsformaten en
+                                het digitaliseren van geluid.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-2" id="B1-K2-W1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K2-W3</h3>
+                        <h4>Maakt de media-uiting</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Vakdeskundigheid, kwaliteit leveren. Gebruikt voor iedere bewerkingsstap
+                                de relevante software, met name designsoftware en basis scripting
+                                zodat de media-uiting effectief wordt gemaakt. Vaardigheid met de
+                                relevante software en testen van het product. Kan website op internet
+                                plaatsen.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-3" id="B1-K2-W3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K2-W4</h3>
+                        <h4>Levert de media-uiting op</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Basishandelingen voor het omgaan met hard- en software, (Grafisch)
+                                ict-vakkennis, kennis van ict-procedures.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-4" id="B1-K2-W4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>B1-K2-W5</h3>
+                        <h4>Houdt het (digitaal) archief bij</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>Het structureren en beheren van bestanden. Een goed functionerend
+                                (dus op de juiste manier in het archief opgeslagen) toegankelijk
+                                archief dat up-to-date is.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-2" id="B1-K2-W5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="wp-lbs" class="depth-back-r" onclick="setWerkproces('depth-back-l', 'depth-center-l', 'depth-front')">
+                <div class="bg-blur"></div>
+                <div class="corners-m"></div>
+                <div class="content">
+                    <div class="page">
+                        <h3>LOOPBAANSTURING</h3>
+                        <h4>Benoemt en evalueert leerdoelen</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>De stagiair is in staat om haar eigen ontwikkeling te benoemen, de
+                                route hiervoor aan te geven en daarbij passende leerdoelen SMART te
+                                formuleren. De stagiair kan in haar stageverslag reflecteren op
+                                haar leerdoelen en het leerproces hiervoor.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-4" id="LOOPBAANSTURING1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <h3>LOOPBAANSTURING</h3>
+                        <h4>Functioneert als werknemer in een organisatie</h4>
+                        <div class="display">
+                            <div class="corners-xs"></div>
+                            <h5>De stagiair kan zich houden aan de regels die in het bedrijf gebruikelijk
+                                zijn. De stagiair kent haar verantwoordelijkheid, stelt zich collegiaal en
+                                flexibel op. Draagt bij aan een positieve werksfeer en houdt rekening
+                                met de bedrijfscultuur. Gaat volgens de bedrijfsnormen om met klanten
+                                en bezoekers.</h5>
+                            <div class="bar stage1">
+                                <div class="score score-3" id="LOOPBAANSTURING2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="selection">
+                <button class="tab current" onclick="setWerkproces('depth-front', 'depth-center-r', 'depth-back-r')">WP1</button>
+                <button class="tab" onclick="setWerkproces('depth-center-l', 'depth-front', 'depth-center-r')">WP2</button>
+                <button class="tab" onclick="setWerkproces('depth-back-l', 'depth-center-l', 'depth-front')">LBS</button>
+                <div class="flex-line"></div>
+                <button id="stage-btn1" class="stagebutton current" onclick="setStageTime('stage1_1', 'stage-btn1')">STAGIAIR: Aanvang stage 1</button>
+                <button id="stage-btn2" class="stagebutton" onclick="setStageTime('stage1_2', 'stage-btn2')">OPLEIDER: Na 2,5 maand</button>
+                <button id="stage-btn3" class="stagebutton" onclick="setStageTime('stage1_3', 'stage-btn3')">OPLEIDER: Na 5 maanden</button>
+                <br>
+                <button id="stage-btn4" class="stagebutton" onclick="setStageTime('stage2_1', 'stage-btn4')">STAGIAIR: Aanvang stage 2</button>
+                <button id="stage-btn5" class="stagebutton" onclick="setStageTime('stage2_2', 'stage-btn5')">OPLEIDER: Na 2,5 maand</button>
+                <button id="stage-btn6" class="stagebutton" onclick="setStageTime('stage2_3', 'stage-btn6')">OPLEIDER: Na 5 maanden</button>
+            </div>
+        </div>
+        <div id="topgradient"></div>
+        
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
